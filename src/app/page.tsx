@@ -1,9 +1,7 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Hello, Ominis AI! 👋
-      </h1>
-    </main>
+   <section className="bg-blue-100 p-4">
+  <h1 className="text-red-800 text-sm font-semibold">Home Page</h1>
+  </section>
   );
 }
