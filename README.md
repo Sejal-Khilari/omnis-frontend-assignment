@@ -2,25 +2,6 @@
 
 A modern, responsive dashboard application built with Next.js 15, React 19, and Tailwind CSS 4. This project demonstrates advanced UI components, responsive design patterns, and modern React development practices.
 
-## 🚀 Features
-
-### Core Components
-
-- **Responsive Sidebar Navigation** - Collapsible sidebar with smooth animations
-- **Dynamic Tab Navigation** - Arrow-shaped overlapping tabs with active states
-- **Step Progress Bar** - Interactive progress indicator with 10 steps
-- **Dashboard Cards** - Multiple card layouts for different content types
-- **Search Interface** - Advanced search with keyboard shortcuts
-- **Notification System** - Real-time notifications with badges
-
-### UI/UX Features
-
-- **Dark Theme Sidebar** - Professional dark navigation with hover effects
-- **Responsive Design** - Mobile-first approach with breakpoint optimization
-- **Smooth Animations** - CSS transitions and transforms for enhanced UX
-- **Component Architecture** - Atomic design pattern implementation
-- **Accessibility** - ARIA labels and keyboard navigation support
-
 ## 🛠️ Tech Stack
 
 ### Core Technologies
@@ -32,7 +13,6 @@ A modern, responsive dashboard application built with Next.js 15, React 19, and 
 
 ### UI Libraries
 
-- **Material-UI**: `^7.2.0` - React component library
 - **React Icons**: `^5.5.0` - Icon library
 - **Iconsax React**: `^0.0.8` - Modern icon set
 - **Clsx**: `^2.1.1` - Conditional className utility
