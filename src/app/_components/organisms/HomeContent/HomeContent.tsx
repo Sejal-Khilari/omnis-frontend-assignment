@@ -1,6 +1,5 @@
 // components/organisms/HomeContent.tsx
 import Head from "next/head";
-import HeaderTitleSection from "../../molecules/HomeContent/HeaderTitleSection";
 import StepProgressBar from "../../molecules/HomeContent/StepProgressBar";
 import HomeSummaryHeader from "../../molecules/HomeContent/HomeSummaryHeader";
 import SummaryStatsGrid from "../../molecules/HomeContent/SummaryStatsGrid";
@@ -10,7 +9,6 @@ import DetailedTransactionCard from "../../molecules/HomeContent/DetailedTransac
 export default function HomeContent() {
     return (
       <div className="bg-[#FFFCF5] min-h-screen min-w-[900px]">
-        {/* <HeaderTitleSection /> */}
         <StepProgressBar /> 
         <HomeSummaryHeader />
         <SummaryStatsGrid />

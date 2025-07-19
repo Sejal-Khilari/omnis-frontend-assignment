@@ -60,7 +60,7 @@ export default function StepProgressBar() {
       ? "polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%, 16px 50%)"
       : "polygon(0 0, 100% 0, 100% 100%, 0 100%, 16px 50%)"
     : "polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%)",
-marginRight: idx !== steps.length - 1 ? "-16px" : "0",
+marginRight: idx !== steps.length - 1 ? "-14px" : "0",
 zIndex: steps.length - idx,
 
             }}
