@@ -3,8 +3,8 @@
 import { KeyboardCommandKey, Search } from "@mui/icons-material";
 
 interface SearchInputProps {
-  width?: string;        // Tailwind class, e.g., "w-[400px]"
-  height?: string;       // Tailwind class, e.g., "h-[40px]"
+  width?: string; // Tailwind class, e.g., "w-[400px]"
+  height?: string; // Tailwind class, e.g., "h-[40px]"
   placeholder?: string;
 }
 
