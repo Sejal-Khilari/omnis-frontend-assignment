@@ -12,31 +12,42 @@ const tabs = [
   "Lorem",
   "Lorem",
   "Lect...",
-  "Nunc"
+  "Nunc",
 ];
 
 export default function HeaderTitleSection() {
   return (
-    <div className="bg-[#FFFCF5] px-6 pt-4 pb-2 border-b border-[#EAECF0] shadow-sm">
-      <div className="flex gap-0.5">
-        {tabs.map((tab, idx) => (
-          <div
-            key={tab + idx}
-            className={`px-6 py-3 rounded-t-lg font-semibold text-base transition-all whitespace-nowrap ${
-              idx === 0
-                ? "bg-[#FFFCF5] text-[#1A1A1A] shadow-none border-b-2 border-[#FFFCF5] text-lg font-bold"
-                : "bg-[#F5F6F7] text-gray-400 shadow-sm border-b-2 border-[#EAECF0]"
-            }`}
-            style={{
-              boxShadow: idx !== 0 ? "0 2px 6px 0 rgba(16, 24, 40, 0.04)" : undefined,
-              maxWidth: idx === 10 ? 60 : 120,
-              overflow: "hidden",
-              textOverflow: "ellipsis"
-            }}
-          >
-            {tab}
-          </div>
-        ))}
+    <div className="bg-[#FFFCF5] px-6 pt-4 pb-2 border-b border-[#EAECF0]">
+      <div className="flex overflow-x-auto">
+        {tabs.map((tab, idx) => {
+          const isFirst = idx === 0;
+          const isLast = idx === tabs.length - 1;
+          const clipPath = isFirst
+            ? "polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%)"
+            : isLast
+            ? "polygon(12px 0, 100% 0, 100% 100%, 12px 100%, 0 50%)"
+            : "polygon(12px 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0 50%)";
+
+          return (
+            <div
+              key={tab + idx}
+              className={`relative px-6 py-3 text-sm font-medium transition-all whitespace-nowrap h-[44px] flex items-center justify-center shadow-sm ${
+                isFirst
+                  ? "bg-[#FFFCF5] text-[#1A1A1A] text-base font-bold z-20"
+                  : "bg-white text-gray-500 z-10"
+              }`}
+              style={{
+                clipPath,
+                marginRight: !isLast ? "-12px" : "0",
+                maxWidth: idx === 10 ? 60 : 100,
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
+              {tab}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

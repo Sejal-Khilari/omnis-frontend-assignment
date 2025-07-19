@@ -17,12 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="w-full h-full">
+      <body className="w-full h-full overflow-x-hidden">
         <Navbar />
-        <div className="flex min-h-screen">
+        <div className="flex w-full min-h-screen overflow-x-hidden">
           <Sidebar />
-          <main className="flex-1 p-6">
+          <main className="flex-1 p-6 overflow-x-auto">
             {children}
           </main>
           <RightSidebar />
@@ -31,3 +31,4 @@ export default function RootLayout({
     </html>
   );
 }
+

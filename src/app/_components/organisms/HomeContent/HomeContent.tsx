@@ -9,9 +9,9 @@ import DetailedTransactionCard from "../../molecules/HomeContent/DetailedTransac
 
 export default function HomeContent() {
     return (
-      <div className="bg-[#FFFCF5] min-h-screen">
-        {/* <HeaderTitleSection />
-        <StepProgressBar /> */}
+      <div className="bg-[#FFFCF5] min-h-screen min-w-[900px]">
+        {/* <HeaderTitleSection /> */}
+        <StepProgressBar /> 
         <HomeSummaryHeader />
         <SummaryStatsGrid />
         <div className="flex flex-col lg:flex-row gap-6 px-4 py-6">
