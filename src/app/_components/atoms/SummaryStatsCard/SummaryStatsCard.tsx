@@ -16,7 +16,9 @@ export default function SummaryStatCard({
   bgColor = "bg-white",
 }: SummaryStatCardProps) {
   return (
-    <div className={`flex justify-between items-start p-4 rounded-xl shadow-sm ${bgColor}`}>
+    <div
+      className={`flex justify-between items-start p-4 rounded-xl shadow-sm ${bgColor}`}
+    >
       <div>
         <p className="text-sm text-gray-600">{label}</p>
         <p className={`text-lg font-semibold mt-1 ${textColor}`}>{value}</p>

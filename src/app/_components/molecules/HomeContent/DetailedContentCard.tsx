@@ -11,9 +11,21 @@ export default function DetailedContentCard() {
       <div className="-mx-6 border-t my-4 border-[#EDEAE3]" />
       {/* Stat summary row */}
       <div className="flex flex-col sm:flex-row gap-3 mb-4">
-        <StatCard label="Lorem ipsum dolor sit amet" value="$2,975" color="red" />
-        <StatCard label="Lorem ipsum dolor sit amet" value="$35,000" color="green" />
-        <StatCard label="Lorem ipsum dolor sit amet" value="$32,025" color="blue" />
+        <StatCard
+          label="Lorem ipsum dolor sit amet"
+          value="$2,975"
+          color="red"
+        />
+        <StatCard
+          label="Lorem ipsum dolor sit amet"
+          value="$35,000"
+          color="green"
+        />
+        <StatCard
+          label="Lorem ipsum dolor sit amet"
+          value="$32,025"
+          color="blue"
+        />
       </div>
       {/* Transaction items */}
       <div className="space-y-3">
@@ -38,4 +50,4 @@ export default function DetailedContentCard() {
       </div>
     </Card>
   );
-} 
+}

@@ -1,12 +1,6 @@
 import React from "react";
 import SummaryStatCard from "../../atoms/SummaryStatsCard";
-import {
-  Stickynote,
-  Bill,
-  MoneySend,
-  Calendar,
-  Task
-} from "iconsax-react";
+import { Stickynote, Bill, MoneySend, Calendar, Task } from "iconsax-react";
 
 export default function SummaryStatsGrid() {
   return (
