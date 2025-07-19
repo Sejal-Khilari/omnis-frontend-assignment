@@ -1,9 +1,9 @@
+import HomeContent from "./_components/organisms/HomeContent";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Hello, Ominis AI! 👋
-      </h1>
-    </main>
+   <section >
+    <HomeContent />
+  </section>
   );
 }
